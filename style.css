@@ -1,0 +1,138 @@
+/* ======================================= */
+/* 1. GLOBÁLNÍ NASTAVENÍ A FONT          */
+/* ======================================= */
+
+/* Plynulé skrolování - Zlepšuje UX při navigaci na One Page Layoutu */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nastavení vlastního fontu (Montserrat je čistý a elegantní) 
+   DŮLEŽITÉ: Musíš ho importovat do <head> pomocí Google Fonts CDN! 
+   Příklad: <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Lehce světle šedé pozadí */
+}
+
+/* Vertikální odsazení sekcí */
+section {
+    padding: 80px 0;
+}
+
+
+/* ======================================= */
+/* 2. NAVIGACE A MENU                      */
+/* ======================================= */
+
+/* Tmavší pozadí navigace, které lépe sedí k luxusnímu tématu */
+.navbar.bg-dark {
+    background-color: #1A1A1A !important; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Jemný stín */
+}
+
+/* Stylování loga/brandu */
+.navbar-brand {
+    font-weight: 700;
+    color: #f0f0f0 !important;
+}
+
+/* Zvýraznění aktivní položky (ScrollSpy přidá třídu .active) */
+.navbar-nav .nav-link.active {
+    color: #A67C00 !important; /* Zlatý akcent */
+    border-bottom: 2px solid #A67C00;
+    padding-bottom: 5px;
+}
+
+/* Efekt při najetí myší */
+.navbar-nav .nav-link:hover {
+    color: #D4AF37 !important; /* Mírně světlejší zlatá */
+}
+
+
+/* ======================================= */
+/* 3. VIZUÁLNÍ AKCENTY A BARVY             */
+/* ======================================= */
+
+/* Globální nastavení akcentní barvy pro progress bary a titulky */
+
+/* Safírově modrá/Primární (pro nadpisy a karty) */
+.text-primary, 
+.btn-outline-primary {
+    color: #0047AB !important; 
+    border-color: #0047AB !important;
+}
+
+/* Zlatá/Sekundární (pro luxusní ikony a Progress Bars) */
+.text-gold {
+    color: #A67C00 !important;
+}
+
+/* Progress bar - Nastavení barvy pro Mechanickou složitost */
+.progress-bar.bg-info { 
+    background-color: #A67C00 !important; /* Zlatá */
+    color: #1a1a1a !important; /* Tmavý text na zlaté */
+}
+
+/* Progress bar - Nastavení barvy pro Kapacitu servisu (Chronografy) */
+.progress-bar.bg-warning {
+    background-color: #ffc107 !important; /* Žlutá, ale pro kontrast */
+    color: #1a1a1a !important;
+}
+
+
+/* ======================================= */
+/* 4. SEKCE SPECIFICKÉ ÚPRAVY              */
+/* ======================================= */
+
+/* Sekce ÚVOD */
+#uvod {
+    background: #e9ecef url('path/to/watch-background.jpg') no-repeat center center; /* Volitelný obrázek na pozadí */
+    background-size: cover;
+    color: #333;
+    padding: 120px 0;
+}
+#uvod .lead {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+
+/* Sekce KOLEKCE (Karty) */
+#kolekce .card {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#kolekce .card:hover {
+    transform: translateY(-8px); /* Karta mírně vyskočí */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#kolekce .card-header.border-primary {
+    background-color: #0047AB; /* Safírová hlavička */
+    color: white;
+}
+
+/* Modal Window */
+.modal-header.bg-primary {
+    background-color: #1A1A1A !important;
+}
+
+.modal-content {
+    border-radius: 10px;
+}
+
+/* Patička */
+footer {
+    background-color: #1A1A1A !important;
+    font-size: 0.9rem;
+}
+
+/* Odstranění modrého obrysu (focus) u tlačítek/odkazů po kliknutí (pokud chceš čistší design) */
+.btn:focus, .nav-link:focus, .form-control:focus {
+    box-shadow: none !important;
+}
