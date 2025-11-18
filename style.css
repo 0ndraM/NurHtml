@@ -2,137 +2,205 @@
 /* 1. GLOBÁLNÍ NASTAVENÍ A FONT          */
 /* ======================================= */
 
-/* Plynulé skrolování - Zlepšuje UX při navigaci na One Page Layoutu */
 html {
     scroll-behavior: smooth;
 }
 
-/* Nastavení vlastního fontu (Montserrat je čistý a elegantní) 
-   DŮLEŽITÉ: Musíš ho importovat do <head> pomocí Google Fonts CDN! 
-   Příklad: <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-*/
 body {
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa; /* Lehce světle šedé pozadí */
+    line-height: 1.8;
+    background-color: #f5f5f7; /* Jemně světle šedé pozadí pro sofistikovaný vzhled */
+    color: #2c2c2c;
 }
 
 /* Vertikální odsazení sekcí */
 section {
-    padding: 80px 0;
+    padding: 100px 0;
+    scroll-margin-top: 80px;
 }
-
 
 /* ======================================= */
 /* 2. NAVIGACE A MENU                      */
 /* ======================================= */
 
-/* Tmavší pozadí navigace, které lépe sedí k luxusnímu tématu */
 .navbar.bg-dark {
-    background-color: #1A1A1A !important; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Jemný stín */
+    background-color: #121212 !important; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-/* Stylování loga/brandu */
 .navbar-brand {
     font-weight: 700;
-    color: #f0f0f0 !important;
+    color: #f8f8f8 !important;
+    font-size: 1.8rem;
 }
 
-/* Zvýraznění aktivní položky (ScrollSpy přidá třídu .active) */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
 .navbar-nav .nav-link.active {
-    color: #A67C00 !important; /* Zlatý akcent */
-    border-bottom: 2px solid #A67C00;
+    color: #d4af37 !important; /* Jemná zlatá pro luxus */
+    border-bottom: 2px solid #d4af37;
     padding-bottom: 5px;
 }
 
-/* Efekt při najetí myší */
 .navbar-nav .nav-link:hover {
-    color: #D4AF37 !important; /* Mírně světlejší zlatá */
+    color: #ffd700 !important; /* Zlatý odstín při hoveru */
 }
-
 
 /* ======================================= */
 /* 3. VIZUÁLNÍ AKCENTY A BARVY             */
 /* ======================================= */
 
-/* Globální nastavení akcentní barvy pro progress bary a titulky */
-
-/* Safírově modrá/Primární (pro nadpisy a karty) */
-.text-primary, 
-.btn-outline-primary {
-    color: #0047AB !important; 
-    border-color: #0047AB !important;
+.text-primary, .btn-outline-primary {
+    color: #003366 !important;
+    border-color: #003366 !important;
 }
 
-/* Zlatá/Sekundární (pro luxusní ikony a Progress Bars) */
 .text-gold {
-    color: #A67C00 !important;
+    color: #d4af37 !important;
 }
 
-/* Progress bar - Nastavení barvy pro Mechanickou složitost */
-.progress-bar.bg-info { 
-    background-color: #A67C00 !important; /* Zlatá */
-    color: #1a1a1a !important; /* Tmavý text na zlaté */
+/* Progress bar */
+.progress-bar.bg-info {
+    background-color: #d4af37 !important; /* Zlatá */
+    color: #121212 !important;
 }
 
-/* Progress bar - Nastavení barvy pro Kapacitu servisu (Chronografy) */
 .progress-bar.bg-warning {
-    background-color: #ffc107 !important; /* Žlutá, ale pro kontrast */
-    color: #1a1a1a !important;
+    background-color: #ffc107 !important;
+    color: #121212 !important;
 }
-
 
 /* ======================================= */
 /* 4. SEKCE SPECIFICKÉ ÚPRAVY              */
 /* ======================================= */
 
-/* Sekce ÚVOD */
+/* ÚVOD */
 #uvod {
-    background: #e9ecef url('path/to/watch-background.jpg') no-repeat center center; /* Volitelný obrázek na pozadí */
+    background: linear-gradient(rgba(20,20,20,0.4), rgba(20,20,20,0.4)), url('path/to/watch-background.jpg') no-repeat center center;
     background-size: cover;
-    color: #333;
-    padding: 120px 0;
+    color: #f8f8f8;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    padding: 140px 0;
 }
+
 #uvod .lead {
-    font-size: 1.3rem;
-    color: #555;
+    font-size: 1.4rem;
+    color: #e0e0e0;
 }
 
-
-/* Sekce KOLEKCE (Karty) */
+/* KOLEKCE - Karty */
 #kolekce .card {
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
 }
 
 #kolekce .card:hover {
-    transform: translateY(-8px); /* Karta mírně vyskočí */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
-#kolekce .card-header.border-primary {
-    background-color: #0047AB; /* Safírová hlavička */
-    color: white;
+#kolekce .card-body img {
+    border-radius: 10px;
 }
 
 /* Modal Window */
 .modal-header.bg-primary {
-    background-color: #1A1A1A !important;
+    background-color: #121212 !important;
+    color: #ffd700 !important;
 }
 
 .modal-content {
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Sekce Typy */
+#typy {
+    background-color: #f0f2f5;
+}
+
+#typy .col-md-6 img {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+#typy .col-md-6 img:hover {
+    transform: scale(1.05);
+}
+
+/* Sekce Historie - timeline */
+#historie .row {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+#historie .row::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #d4af37;
+    transform: translateX(-50%);
+}
+#historie .col-lg-6 {
+    position: relative;
+    padding: 25px;
+}
+#historie .col-lg-6::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #003366;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+/* Péče o hodinky */
+#pec .col-md-6 img {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+#pec .col-md-6 img:hover {
+    transform: scale(1.05);
 }
 
 /* Patička */
 footer {
-    background-color: #1A1A1A !important;
+    background-color: #121212 !important;
     font-size: 0.9rem;
+    color: #f8f8f8;
+    padding: 30px 0;
 }
 
-/* Odstranění modrého obrysu (focus) u tlačítek/odkazů po kliknutí (pokud chceš čistší design) */
-.btn:focus, .nav-link:focus, .form-control:focus {
-    box-shadow: none !important;
+/* Tlačítka */
+.btn-primary {
+    background-color: #003366;
+    border-color: #003366;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #001f4d;
+    border-color: #001f4d;
+}
+
+/* Efekty textů */
+h2, h3, h4 {
+    color: #121212;
+    font-weight: 600;
+}
+
+/* Ostatní drobné úpravy */
+section p {
+    font-size: 1.1rem;
+    color: #3c3c3c;
 }
