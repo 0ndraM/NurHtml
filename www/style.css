@@ -1,0 +1,183 @@
+/* ======================================= */
+/* 1. GLOBÁLNÍ NASTAVENÍ A FONT          */
+/* ======================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    background-color: #f5f5f7;
+    color: #2c2c2c;
+}
+
+section {
+    padding: 80px 0;
+    /* Zajistí správné odsazení při kliknutí na odkaz v menu */
+    scroll-margin-top: 70px; 
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+    color: #121212;
+}
+
+/* ======================================= */
+/* 2. NAVIGACE                           */
+/* ======================================= */
+
+.navbar {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    transition: color 0.3s;
+}
+
+.nav-link.active {
+    color: #d4af37 !important; /* Zlatá */
+    font-weight: 600;
+}
+
+/* ======================================= */
+/* 3. KOMPONENTY A BARVY                 */
+/* ======================================= */
+
+.text-primary {
+    color: #003366 !important; /* Tmavě modrá */
+}
+
+.btn-primary {
+    background-color: #003366;
+    border-color: #003366;
+    padding: 10px 25px;
+}
+
+.btn-primary:hover {
+    background-color: #002244;
+}
+
+.btn-outline-primary {
+    color: #003366;
+    border-color: #003366;
+}
+
+.btn-outline-primary:hover {
+    background-color: #003366;
+    color: #fff;
+}
+
+/* ======================================= */
+/* 4. SPECIFICKÉ SEKCE                   */
+/* ======================================= */
+
+/* ÚVOD */
+#uvod {
+    /* Pokud nemáte obrázek, použije se šedá. Nahraďte url('...') vlastním obrázkem */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1920x1080?text=Pozadi+hodinek') no-repeat center center;
+    background-size: cover;
+    color: white;
+    min-height: 80vh;
+}
+
+/* MECHANIKA - Karty */
+#mechanika .card {
+    transition: transform 0.3s ease;
+}
+#mechanika .card:hover {
+    transform: translateY(-5px);
+}
+
+/* HISTORIE - TIMELINE (Časová osa) */
+/* Základní styl pro mobil (bez čáry) */
+#historie .timeline-item {
+    position: relative;
+    padding: 20px;
+    border-left: 3px solid #d4af37; /* Na mobilu jen jednoduchá čára vlevo */
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+/* Styl pro desktop (nad 992px) - vytvoříme centrální osu */
+@media (min-width: 992px) {
+    #historie .timeline-row {
+        position: relative;
+    }
+
+    /* Centrální čára */
+    #historie .timeline-row::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: #d4af37;
+        transform: translateX(-50%);
+    }
+
+    /* Reset mobilního stylu */
+    #historie .timeline-item {
+        border-left: none;
+        margin-left: 0;
+        padding: 0 40px; /* Odsazení od středu */
+    }
+
+    /* Levá strana */
+    #historie .timeline-item.left {
+        text-align: right;
+        padding-right: 50px;
+    }
+    
+    /* Pravá strana */
+    #historie .timeline-item.right {
+        text-align: left;
+        padding-left: 50px;
+        margin-left: 50%; /* Posuneme doprava */
+    }
+
+    /* Tečky na ose */
+    #historie .timeline-item::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border: 4px solid #003366;
+        border-radius: 50%;
+        top: 0px; 
+        z-index: 2;
+    }
+
+    #historie .timeline-item.left::after {
+        right: -10px; /* Umístění tečky na střed pro levé prvky */
+    }
+
+    #historie .timeline-item.right::after {
+        left: -10px; /* Umístění tečky na střed pro pravé prvky */
+    }
+}
+
+/* OBRÁZKY */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* PÉČE A MODALS */
+.modal-header {
+    background-color: #003366;
+    color: white;
+}
+.modal-header .btn-close {
+    filter: invert(1);
+}
