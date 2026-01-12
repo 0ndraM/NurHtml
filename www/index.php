@@ -49,15 +49,53 @@
         </div>
     </nav>
 
-    <section id="uvod" class="text-center d-flex align-items-center">
-        <div class="container">
-            <h1 class="display-3 fw-bold mb-4">Chronos – Objevte krásu času</h1>
-            <p class="lead mb-5 mx-auto" style="max-width: 800px;">
-                Hodinky nejsou jen nástroj k měření času. Jsou symbolem preciznosti, elegance a tradice. Každý model vypráví svůj vlastní příběh.
-            </p>
-            <a href="#onas" class="btn btn-primary btn-lg mt-3 shadow">
-                Zjistěte více
-            </a>
+    <section id="uvod" class="p-0">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-background" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/banner.jpg');"></div>
+                    <div class="container d-flex align-items-center justify-content-center text-center hero-content">
+                        <div>
+                            <h1 class="display-3 fw-bold mb-4">Chronos – Objevte krásu času</h1>
+                            <p class="lead mb-5 mx-auto" style="max-width: 800px;">Hodinky nejsou jen nástroj k měření času. Jsou symbolem preciznosti, elegance a tradice.</p>
+                            <a href="#onas" class="btn btn-primary btn-lg shadow">Zjistěte více</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-background" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/watchmaker.jpg');"></div>
+                    <div class="container d-flex align-items-center justify-content-center text-center hero-content">
+                        <div>
+                            <h2 class="display-3 fw-bold mb-4">Mistrovství mechaniky</h2>
+                            <p class="lead mb-5 mx-auto" style="max-width: 800px;">Tisíce součástek pracujících v dokonalé harmonii. Poznejte srdce mechanických hodinek.</p>
+                            <a href="#mechanika" class="btn btn-primary btn-lg shadow">Prozkoumat mechaniku</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-background" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/watchbox.jpg');"></div>
+                    <div class="container d-flex align-items-center justify-content-center text-center hero-content">
+                        <div>
+                            <h2 class="display-3 fw-bold mb-4">Ikony historie</h2>
+                            <p class="lead mb-5 mx-auto" style="max-width: 800px;">Od hlubin oceánů až po povrch Měsíce. Hodinky, které psaly dějiny.</p>
+                            <a href="#historie" class="btn btn-primary btn-lg shadow">Příběhy ikon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Předchozí</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Další</span>
+            </button>
         </div>
     </section>
 
