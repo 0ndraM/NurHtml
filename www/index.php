@@ -16,6 +16,10 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100">
 
+        <div style="position: fixed; top: 7px; right: 7px; z-index: 1050;" class="d-none d-lg-block">
+        <iframe src="https://static.rolex.com/retailers/clock/?colour=gold&apiKey=ee8c6e324fd9fa0dece91e0c29e35935&lang=cs" style="width: 150px; height: 150px; border: none;" scrolling="no"></iframe>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#uvod">⌚ Chronos</a>
@@ -389,7 +393,7 @@
                                 <input type="text" id="name" class="form-control" required>
                             </div>
                             <div class="col-md-6">
-                                <label for="email" class="form-label">E‑mail</label>
+                                <label for="email" class="form-label">E-mail</label>
                                 <input type="email" id="email" class="form-control" required>
                             </div>
                             <div class="col-12">
@@ -412,7 +416,7 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="gmtModal" tabindex="-1"< aria-hidden="true">
+    <div class="modal fade" id="gmtModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">

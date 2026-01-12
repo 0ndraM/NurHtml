@@ -19,7 +19,7 @@ section {
     scroll-margin-top: 70px; 
 }
 
-h1, h2, h3, h4, h5 {
+ h2, h3, h4, h5 {
     font-weight: 600;
     color: #121212;
 }
@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5 {
 
 .navbar-brand {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2rem;
     letter-spacing: 1px;
 }
 
@@ -86,6 +86,10 @@ h1, h2, h3, h4, h5 {
     background-size: cover;
     color: white;
     min-height: 80vh;
+     
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        color: white;
+    }
 }
 
 /* MECHANIKA - Karty */
