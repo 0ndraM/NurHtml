@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5 {
 /* ÚVOD */
 #uvod {
     /* Pokud nemáte obrázek, použije se šedá. Nahraďte url('...') vlastním obrázkem */
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1920x1080?text=Pozadi+hodinek') no-repeat center center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/banner.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     min-height: 80vh;

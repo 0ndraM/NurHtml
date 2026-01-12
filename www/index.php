@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/png" sizes="96x96" rel="icon" href="images/favicon/icons8-watch-emoji-96.png"> 
+    <link type="image/png" sizes="96x96" rel="icon" href="images/favicon/icons8-watch-emoji-96.png"> 
+    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="images/favicon/icons8-watch-emoji-76.png"> 
+    <meta name="msapplication-square70x70logo" content="images/favicon/icons8-watch-emoji-70.png">
+    <meta name="description" content="Objevte svět hodinek – od mechaniky po historii, ikonické modely a péči o vaše časomíry."> 
     <title>Hodinky – Svět Preciznosti a Luxusu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJd/rB1/QWqTPAp9B+gR7bA1G6oX6vR4kG+rIq0r0fK3r3J1I0aJ1gX0s8dGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
