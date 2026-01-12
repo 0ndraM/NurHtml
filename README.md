@@ -10,10 +10,14 @@ Chronos je moderní webová prezentace zaměřená na hodinářství, která př
 
 - **Responzivní design** - Plně optimalizováno pro mobily, tablety i desktopy
 - **Interaktivní navigace** - Plynulé scrollování mezi sekcemi
+- **Rolex hodiny** - Živé hodiny od Rolexu v pravém horním rohu (desktop)
+- **Karusel obrázků** - Automatické přehrávání úvodních snímků
 - **Historie hodinek** - Chronologická časová osa vývoje hodinek
 - **Komplikace** - Detailní popis hodinářských funkcí (chronograf, GMT, kalendář)
 - **Typy strojků** - Porovnání mechanických a quartzových hodinek
 - **Ikony hodinářství** - Představení legendárních modelů
+- **Materiály pouzder** - Přehled materiálů používaných v hodinářství
+- **Slovníček pojmů** - Interaktivní accordion s vysvětlením termínů
 - **Kontaktní formulář** - Pro komunikaci s návštěvníky
 - **Bootstrap 5** - Moderní komponenty a responzivní grid
 
@@ -63,7 +67,7 @@ docker-compose down
 NurHtml/
 ├── docker-compose.yml      # Docker konfigurace
 └── www/                    # Webové soubory
-    ├── index.php          # Hlavní stránka
+    ├── index.html         # Hlavní stránka
     ├── style.css          # Vlastní styly
     └── images/            # Obrázky a fotografie
 ```
@@ -72,14 +76,14 @@ NurHtml/
 
 ### Sekce
 
-1. **Domů** - Úvodní sekce s hlavním nadpisem
-2. **O nás** - Informace o projektu a cílech
-3. **Mechanika** - Porovnání mechanických a quartzových strojků
-4. **Komplikace** - Chronograf, GMT, kalendář
-5. **Historie** - Časová osa vývoje hodinek od starověku po dnešek
-6. **Ikony** - Legendární modely (Submariner, Tank, Speedmaster)
-7. **Typy** - Digitální, mechanické, quartz, smartwatch
-8. **Péče** - Tipy pro údržbu hodinek
+1. **Domů** - Úvodní sekce s hlavním nadpisem a karusel obrázků
+2. **Mechanika** - Porovnání mechanických a quartzových strojků
+3. **Komplikace** - Chronograf, GMT, kalendář s modálními okny
+4. **Historie** - Časová osa vývoje hodinek od starověku po dnešek
+5. **Ikony** - Legendární modely (Submariner, Tank, Speedmaster)
+6. **Materiály** - Přehled materiálů pouzder (ocel, titan, zlato, keramika)
+7. **Slovníček** - Vysvětlení základních hodinářských pojmů
+8. **Péče** - Tipy pro údržbu a servis hodinek
 9. **Kontakt** - Kontaktní formulář
 
 ## 🌐 Funkce designu
@@ -87,9 +91,12 @@ NurHtml/
 - **Sticky navigace** - Menu zůstává viditelné při scrollování
 - **Progress bary** - Vizuální porovnání vlastností hodinek
 - **Timeline** - Vertikální časová osa s obrázky
-- **Modální okna** - Detailní informace o komplikacích
-- **Hover efekty** - Interaktivní prvky
+- **Modální okna** - Detailní informace o komplikacích (GMT, kalendář, chronograf)
+- **Accordion** - Rozbalovací slovníček hodinářských pojmů
+- **Karusel** - Automatické přehrávání úvodních obrázků s fade efekty
+- **Hover efekty** - Interaktivní prvky při najetí myší
 - **Hladké scrollování** - Plynulé přechody mezi sekcemi
+- **Rolex iframe** - Integrované živé hodiny Rolex (viditelné na desktopu)
 
 ## 🎓 Vzdělávací účel
 
