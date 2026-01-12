@@ -9,32 +9,39 @@
     <meta name="msapplication-square70x70logo" content="images/favicon/icons8-watch-emoji-70.png">
     <meta name="description" content="Objevte svět hodinek – od mechaniky po historii, ikonické modely a péči o vaše časoměry."> 
     <title>Hodinky – Svět Preciznosti a Luxusu</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJd/rB1/QWqTPAp9B+gR7bA1G6oX6vR4kG+rIq0r0fK3r3J1I0aJ1gX0s8dGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJd/rB1/QWqTPAp9B+gR7bA1G6oX6vR4kG+rIq0r0fK3r3J1I0aJ1gX0s8dGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+ 
+    </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100">
 
-        <div style="position: fixed; top: 7px; right: 7px; z-index: 1050;" class="d-none d-lg-block">
+        <div style="position: fixed; top: 6.4px; right: 7px; z-index: 1050;" class="d-none d-lg-block">
         <iframe src="https://static.rolex.com/retailers/clock/?colour=gold&apiKey=ee8c6e324fd9fa0dece91e0c29e35935&lang=cs" style="width: 150px; height: 150px; border: none;" scrolling="no"></iframe>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#uvod">⌚ Chronos</a>
+            <a class="navbar-brand d-flex align-items-center" href="#uvod">
+                <!-- Fallback ikona, pokud není obrázek -->
+                <i class="fa-regular fa-clock me-2" style="font-size: 32px;"></i>
+                Chronos
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#uvod">Domů</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#onas">O nás</a></li>
                     <li class="nav-item"><a class="nav-link" href="#mechanika">Mechanika</a></li>
                     <li class="nav-item"><a class="nav-link" href="#komplikace">Komplikace</a></li>
                     <li class="nav-item"><a class="nav-link" href="#historie">Historie</a></li>
                     <li class="nav-item"><a class="nav-link" href="#modely">Ikony</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#typy">Typy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#materialy">Materiály</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#slovnicek">Slovníček</a></li>
                     <li class="nav-item"><a class="nav-link" href="#pec">Péče</a></li>
                     <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
                 </ul>
@@ -94,7 +101,7 @@
     </section>
 
     <section id="mechanika">
-        <div class="container">
+        <div class="container mt-5">
             <h2 class="text-center mb-5 display-4 fw-normal">Srdce hodinek</h2>
             <p class="lead text-center mb-5">
                 Mechanika hodinek je fascinující kombinací vědy a umění. Porovnejme si vlastnosti dvou hlavních světů.
@@ -143,9 +150,9 @@
                     <div class="card h-100 border-0 shadow-sm bg-white">
                         <div class="card-body p-4 text-center">
                             <h3 class="text-primary mb-3"><i class="fa-solid fa-hourglass-start me-2"></i> Mechanický strojek</h3>
-                            <img src="images/mechanical movement.jpg" alt="Mechanický strojek" class="img-fluid rounded mb-3">
+                            <img src="images/mechanical movement.jpg" onerror="this.src='https://placehold.co/600x400?text=Mechanicky+strojek'" alt="Mechanický strojek" class="img-fluid rounded mb-3">
                             <p>
-                                Klasické hodinářské řemeslo. Pohon zajišťuje pružina, energii přenáší ozubená kola. Vyžaduje natahování.
+                                Klasické hodinářské řemeslo. Pohon zajišťuje pružina, energii přenáší ozubená kola. Vyžaduje natahování a pravidelný servis, ale má "duši".
                             </p>
                         </div>
                     </div>
@@ -154,9 +161,9 @@
                     <div class="card h-100 border-0 shadow-sm bg-white">
                         <div class="card-body p-4 text-center">
                             <h3 class="text-success mb-3"><i class="fa-solid fa-bolt me-2"></i> Quartzový strojek</h3>
-                            <img src="images/quartzmovement.jpg" alt="Quartzový strojek" class="img-fluid rounded mb-3">
+                            <img src="images/quartzmovement.jpg" onerror="this.src='https://placehold.co/600x400?text=Quartz+strojek'" alt="Quartzový strojek" class="img-fluid rounded mb-3">
                             <p>
-                                Moderní technologie využívající baterii a kmitání křemenného krystalu. Jsou extrémně přesné a odolné.
+                                Moderní technologie využívající baterii a kmitání křemenného krystalu. Jsou extrémně přesné, odolné a cenově dostupnější.
                             </p>
                         </div>
                     </div>
@@ -165,39 +172,39 @@
         </div>
     </section>
 
-    <section id="komplikace" class="text-center bg-light">
+    <section id="komplikace" class="text-center bg-light pt-5 pb-5">
         <div class="container">
             <h2 class="mb-5 display-4 fw-normal">Komplikace</h2>
             <p class="lead mb-5">
-                V hodinářství znamená "komplikace" jakoukoli funkci navíc kromě zobrazení času.
+                V hodinářství znamená "komplikace" jakoukoli funkci navíc kromě zobrazení času (hodin, minut a sekund).
             </p>
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h3 class="card-title h4"><i class="fa-solid fa-stopwatch me-2 text-primary"></i> Chronograf</h3>
-                            <img src="images/chronograf.webp" alt="Chronograf" class="img-fluid rounded mb-3">
-                            <p>Umožňuje měřit časové úseky nezávisle na hlavním čase.</p>
+                            <img src="images/chronograf.webp" onerror="this.src='https://placehold.co/400x300?text=Chronograf'" alt="Chronograf" class="img-fluid rounded mb-3">
+                            <p>Umožňuje měřit časové úseky nezávisle na hlavním čase. Jsou to v podstatě analogové stopky.</p>
                             <button class="btn btn-outline-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#chronografModal">Detail funkce</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h3 class="card-title h4"><i class="fa-solid fa-globe me-2 text-primary"></i> GMT</h3>
-                            <img src="images/GMT.webp" alt="GMT hodinky" class="img-fluid rounded mb-3">
-                            <p>Zobrazuje čas ve dvou různých pásmech najednou.</p>
+                            <img src="images/GMT.webp" onerror="this.src='https://placehold.co/400x300?text=GMT'" alt="GMT hodinky" class="img-fluid rounded mb-3">
+                            <p>Zobrazuje čas ve dvou různých pásmech najednou. Ideální pro cestovatele a piloty.</p>
                             <button class="btn btn-outline-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#gmtModal">Detail funkce</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card shadow-sm h-100">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h3 class="card-title h4"><i class="fa-solid fa-calendar-alt me-2 text-primary"></i> Kalendář</h3>
-                            <img src="images/calendar.webp" alt="Kalendářní komplikace" class="img-fluid rounded mb-3">
-                            <p>Od jednoduchého data až po věčný kalendář.</p>
+                            <img src="images/calendar.webp" onerror="this.src='https://placehold.co/400x300?text=Kalendar'" alt="Kalendářní komplikace" class="img-fluid rounded mb-3">
+                            <p>Od jednoduchého data, přes den v týdnu, až po tzv. věčný kalendář.</p>
                             <button class="btn btn-outline-primary btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#calendarModal">Detail funkce</button>
                         </div>
                     </div>
@@ -206,7 +213,7 @@
         </div>
     </section>
 
-<section id="historie" class="bg-white">
+<section id="historie" class="bg-white pt-5 pb-5">
         <div class="container">
             <h2 class="text-center mb-5 display-4 fw-normal">Historie hodinek</h2>
             <p class="text-center mb-5 lead">
@@ -217,7 +224,7 @@
                 
                 <div class="col-lg-6 mb-4 timeline-item left">
                     <h3>Počátky měření času</h3>
-                    <img src="images/sunclock.jpg" alt="Sluneční hodiny" class="img-fluid rounded mb-3 shadow-sm">
+                    <img src="images/sunclock.jpg" onerror="this.src='https://placehold.co/600x400?text=Slunecni+hodiny'" alt="Sluneční hodiny" class="img-fluid rounded mb-3 shadow-sm">
                     <p>
                        Již ve starověkém Egyptě a Babylonii lidé dělili den na menší úseky. Sluneční hodiny využívaly stín vržený gnómonem, zatímco vodní hodiny (klepsydry) měřily čas odkapáváním vody, což umožňovalo měření i v noci.
                     </p>
@@ -225,7 +232,7 @@
 
                 <div class="col-lg-6 mb-4 timeline-item right mt-lg-5">
                     <h3>Vznik mechanických hodin</h3>
-                    <img src="images/clock.png" alt="Mechanické hodiny" class="img-fluid rounded mb-3 shadow-sm">
+                    <img src="images/clock.png" onerror="this.src='https://placehold.co/600x400?text=Mechanicke+hodiny'" alt="Mechanické hodiny" class="img-fluid rounded mb-3 shadow-sm">
                     <p>
                        Zlom nastal ve 13. a 14. století s vynálezem krokového mechanismu. V 15. století přišla revoluce v podobě hnací pružiny, která umožnila zmenšení strojku. Norimberský zámečník Peter Henlein je často spojován s prvními "vajíčkovými" hodinkami.
                     </p>
@@ -233,7 +240,7 @@
 
                 <div class="col-lg-6 mb-4 timeline-item left">
                     <h3>Náramkové hodinky</h3>
-                    <img src="images/santos.jpg" alt="Náramkové hodinky" class="img-fluid rounded mb-3 shadow-sm">
+                    <img src="images/santos.jpg" onerror="this.src='https://placehold.co/600x400?text=Trench+Watches'" alt="Náramkové hodinky" class="img-fluid rounded mb-3 shadow-sm">
                     <p>
                        Změnu přinesla 1. světová válka, kdy vojáci v zákopech potřebovali rychle odečítat čas. Vznikly tak "trench watches", předchůdci moderních náramkových hodinek, které se staly symbolem praktičnosti a mužnosti.
                     </p>
@@ -241,7 +248,7 @@
 
                 <div class="col-lg-6 mb-4 timeline-item right mt-lg-5">
                     <h3>Hodinky a dobývání vesmíru</h3>
-                    <img src="images/moonwatch.jpg" alt="Omega Speedmaster" class="img-fluid rounded mb-3 shadow-sm">
+                    <img src="images/moonwatch.jpg" onerror="this.src='https://placehold.co/600x400?text=Omega+Speedmaster'" alt="Omega Speedmaster" class="img-fluid rounded mb-3 shadow-sm">
                     <p>
                        V 60. letech se hodinky staly klíčovým nástrojem pro astronauty. Omega Speedmaster se v roce 1969 staly prvními hodinkami na Měsíci. Potvrdilo se, že mechanické hodinky fungují i v extrémních podmínkách.
                     </p>
@@ -249,7 +256,7 @@
 
                 <div class="col-lg-6 mb-4 timeline-item left">
                     <h3>Quartzová revoluce</h3>
-                    <img src="images/Seiko-astron.jpg" alt="Quartzová revoluce" class="img-fluid rounded mb-3 shadow-sm">
+                    <img src="images/Seiko-astron.jpg" onerror="this.src='https://placehold.co/600x400?text=Seiko+Astron'" alt="Quartzová revoluce" class="img-fluid rounded mb-3 shadow-sm">
                     <p>
                        Rok 1969 otřásl světem, když Seiko představilo model Astron. Technologie založená na kmitání křemenného krystalu nabídla bezkonkurenční přesnost a nízkou cenu, což vedlo k "quartzové krizi" a transformaci průmyslu.
                     </p>
@@ -257,7 +264,7 @@
 
                 <div class="col-lg-6 mb-4 timeline-item right mt-lg-5">
                     <h3>Renesance mechaniky</h3>
-                    <img src="images/renesance.jpg" alt="Renesance mechaniky" class="img-fluid rounded mb-3 shadow-sm">
+                    <img src="images/renesance.jpg" onerror="this.src='https://placehold.co/600x400?text=Luxusni+mechanika'" alt="Renesance mechaniky" class="img-fluid rounded mb-3 shadow-sm">
                     <p>
                        V 80. a 90. letech došlo k obrodě mechanických hodinek. Místo pouhého nástroje se staly symbolem statusu a umění. Značky se vrátily k tradiční ruční výrobě, čímž zdůraznily "duši" hodinek oproti elektronice.
                     </p>
@@ -265,7 +272,7 @@
 
                 <div class="col-lg-6 mb-4 timeline-item left">
                     <h3>Éra chytrých hodinek</h3>
-                    <img src="images/aw.jpg" alt="Chytré hodinky" class="img-fluid rounded mb-3 shadow-sm">
+                    <img src="images/aw.jpg" onerror="this.src='https://placehold.co/600x400?text=Smartwatch'" alt="Chytré hodinky" class="img-fluid rounded mb-3 shadow-sm">
                     <p>
                        21. století přineslo propojení s digitálním světem. Smartwatch změnily funkci hodinek na osobního asistenta a zdravotního monitora. Přesto si klasické mechanické hodinky udržely své místo jako nadčasový doplněk.
                     </p>
@@ -275,47 +282,65 @@
         </div>
     </section>
 
-    <section id="modely" class="bg-light">
+    <section id="modely" class="bg-light pt-5 pb-5">
         <div class="container">
             <h2 class="text-center mb-5 display-4 fw-normal">Ikony hodinářství</h2>
             <div class="row g-4">
+                <!-- Původní modely -->
                 <div class="col-md-4 text-center">
-                    <img src="images/sub.png" alt="Rolex Submariner" class="img-fluid rounded shadow-sm mb-3">
+                    <img src="images/sub.png" onerror="this.src='https://placehold.co/300x300?text=Rolex+Submariner'" alt="Rolex Submariner" class="img-fluid rounded shadow-sm mb-3">
                     <h5 class="mt-2">Rolex Submariner</h5>
-                    <p>Definovaly vzhled moderních potápěčských hodinek.</p>
+                    <p class="text-muted small">Definovaly vzhled moderních potápěčských hodinek (1953).</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="images/tank.png" alt="Cartier Tank" class="img-fluid rounded shadow-sm mb-3">
+                    <img src="images/tank.png" onerror="this.src='https://placehold.co/300x300?text=Cartier+Tank'" alt="Cartier Tank" class="img-fluid rounded shadow-sm mb-3">
                     <h5 class="mt-2">Cartier Tank</h5>
-                    <p>Inspirováno tanky z 1. světové války. Společenská elegance.</p>
+                    <p class="text-muted small">Inspirováno tanky z 1. světové války. Společenská elegance (1917).</p>
                 </div>             
                 <div class="col-md-4 text-center">
-                    <img src="images/moonwatch.png" alt="Omega Speedmaster" class="img-fluid rounded shadow-sm mb-3">
+                    <img src="images/moonwatch.png" onerror="this.src='https://placehold.co/300x300?text=Omega+Speedmaster'" alt="Omega Speedmaster" class="img-fluid rounded shadow-sm mb-3">
                     <h5 class="mt-2">Omega Speedmaster</h5>
-                    <p>Legendární "Moonwatch", první hodinky na Měsíci.</p>
+                    <p class="text-muted small">Legendární "Moonwatch", první hodinky na Měsíci (1957).</p>
+                </div>
+                
+                <!-- Nové modely pro rozšíření -->
+                <div class="col-md-4 text-center">
+                    <img src="images/aproyaloak.png" onerror="this.src='https://placehold.co/300x300?text=AP+Royal+Oak'" alt="Audemars Piguet Royal Oak" class="img-fluid rounded shadow-sm mb-3">
+                    <h5 class="mt-2">Audemars Piguet Royal Oak</h5>
+                    <p class="text-muted small">První luxusní sportovní hodinky z oceli, design Géralda Genty (1972).</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/gshock.png" onerror="this.src='https://placehold.co/300x300?text=Casio+G-Shock'" alt="Casio G-Shock" class="img-fluid rounded shadow-sm mb-3">
+                    <h5 class="mt-2">Casio G-Shock</h5>
+                    <p class="text-muted small">Synonymum pro nezničitelnost. Ikonický hranatý design (1983).</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/nautilus.png" onerror="this.src='https://placehold.co/300x300?text=PP+Nautilus'" alt="Patek Philippe Nautilus" class="img-fluid rounded shadow-sm mb-3">
+                    <h5 class="mt-2">Patek Philippe Nautilus</h5>
+                    <p class="text-muted small">Jeden z nejžádanějších modelů světa, inspirovaný lodním okénkem (1976).</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="typy" class="bg-light">
+    <section id="typy" class="bg-white pt-5 pb-5">
         <div class="container">
             <h2 class="text-center mb-5 display-4 fw-normal">Typy hodinek</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
-                    <div class="bg-white p-4 rounded shadow-sm h-100">
+                    <div class="bg-light p-4 rounded shadow-sm h-100">
                         <h3 class="h4 mb-3"><i class="fa-solid fa-clock me-2 text-primary"></i> Digitální hodinky</h3>
-                        <img src="images/obamaosama.png" alt="Digitální hodinky" class="img-fluid rounded mb-3">
+                        <img src="images/obamaosama.png" onerror="this.src='https://placehold.co/500x300?text=Digitalni+hodinky'" alt="Digitální hodinky" class="img-fluid rounded mb-3">
                         <p>
-                            Digitální hodinky zobrazují čas číslicově a často obsahují další funkce, jako budík, stopky nebo GPS. Jsou ideální pro sport a každodenní použití.
+                            Digitální hodinky zobrazují čas číslicově a často obsahují další funkce, jako budík, stopky nebo GPS. Jsou ideální pro sport a každodenní použití díky své odolnosti.
                         </p>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
-                    <div class="bg-white p-4 rounded shadow-sm h-100">
+                    <div class="bg-light p-4 rounded shadow-sm h-100">
                         <h3 class="h4 mb-3"><i class="fa-solid fa-cogs me-2 text-primary"></i> Mechanické hodinky</h3>
-                        <img src="images/nautilusskeleton.jpeg" alt="Mechanické hodinky" class="img-fluid rounded mb-3">
+                        <img src="images/nautilusskeleton.jpeg" onerror="this.src='https://placehold.co/500x300?text=Skeletove+hodinky'" alt="Mechanické hodinky" class="img-fluid rounded mb-3">
                         <p>
                             Mechanické hodinky poháněné pružinou a ozubenými koly jsou symbolem tradičního řemesla a přesnosti. Vhodné pro sběratele a milovníky klasického designu.
                         </p>
@@ -323,9 +348,9 @@
                 </div>
 
                 <div class="col-md-6 mb-4">
-                    <div class="bg-white p-4 rounded shadow-sm h-100">
+                    <div class="bg-light p-4 rounded shadow-sm h-100">
                         <h3 class="h4 mb-3"><i class="fa-solid fa-bolt me-2 text-primary"></i> Quartz hodinky</h3>
-                        <img src="images/Oysterquartz.jpg" alt="Quartz hodinky" class="img-fluid rounded mb-3">
+                        <img src="images/Oysterquartz.jpg" onerror="this.src='https://placehold.co/500x300?text=Quartz+hodinky'" alt="Quartz hodinky" class="img-fluid rounded mb-3">
                         <p>
                             Quartzové hodinky využívají krystal k regulaci přesného času. Jsou spolehlivé, nenáročné na údržbu a vhodné pro každodenní nošení.
                         </p>
@@ -333,9 +358,9 @@
                 </div>
 
                 <div class="col-md-6 mb-4">
-                    <div class="bg-white p-4 rounded shadow-sm h-100">
+                    <div class="bg-light p-4 rounded shadow-sm h-100">
                         <h3 class="h4 mb-3"><i class="fa-solid fa-mobile-screen me-2 text-primary"></i> Smartwatch</h3>
-                        <img src="images/smartwatch.jpg" alt="Smartwatch" class="img-fluid rounded mb-3">
+                        <img src="images/smartwatch.jpg" onerror="this.src='https://placehold.co/500x300?text=Smartwatch'" alt="Smartwatch" class="img-fluid rounded mb-3">
                         <p>
                             Chytré hodinky propojují tradiční hodinky s digitálními funkcemi, jako jsou notifikace, sledování aktivit nebo zdravotní data.
                         </p>
@@ -345,48 +370,175 @@
         </div>
     </section>
 
-    <section id="pec" class="bg-white">
+    <!-- NOVÁ SEKCE: MATERIÁLY -->
+    <section id="materialy" class="bg-light pt-5 pb-5">
         <div class="container">
-            <h2 class="text-center mb-5 display-4 fw-normal">Jak se o hodinky starat</h2>
+            <h2 class="text-center mb-5 display-4 fw-normal">Materiály pouzder</h2>
+            <p class="lead text-center mb-5">Výběr materiálu ovlivňuje nejen vzhled, ale i váhu, odolnost a cenu hodinek.</p>
             <div class="row text-center">
                 <div class="col-md-3 mb-4">
-                    <div class="p-4 rounded shadow-sm h-100 bg-light">
-                        <i class="fa-solid fa-droplet fa-2x mb-3 text-primary"></i>
-                        <h5>Čištění</h5>
-                        <p class="small">Otírejte mikrovláknem. Kovové tahy lze mýt mýdlovou vodou.</p>
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="material-icon text-secondary mx-auto mt-3">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Nerezová Ocel</h5>
+                            <p class="card-text small">Nejčastější materiál (316L nebo 904L). Odolná, leštitelná, ale může se poškrábat.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="p-4 rounded shadow-sm h-100 bg-light">
-                        <i class="fa-solid fa-tools fa-2x mb-3 text-primary"></i>
-                        <h5>Servis</h5>
-                        <p class="small">Mechanické hodinky potřebují servis každých 5 let.</p>
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="material-icon text-warning mx-auto mt-3" style="color: #daa520 !important;">
+                            <i class="fa-regular fa-gem"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Zlato</h5>
+                            <p class="card-text small">Symbol luxusu (18k). Měkčí než ocel, náchylnější k vrypům, ale s vysokou hodnotou.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="p-4 rounded shadow-sm h-100 bg-light">
-                        <i class="fa-solid fa-magnet fa-2x mb-3 text-primary"></i>
-                        <h5>Magnetismus</h5>
-                        <p class="small">Pozor na silné magnety, mohou poškodit strojek.</p>
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="material-icon text-secondary mx-auto mt-3">
+                            <i class="fa-solid fa-feather"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Titan</h5>
+                            <p class="card-text small">Velmi lehký, hypoalergenní a extrémně pevný. Má matnější, šedý vzhled.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-3 mb-4">
-                    <div class="p-4 rounded shadow-sm h-100 bg-light">
-                        <i class="fa-solid fa-water fa-2x mb-3 text-primary"></i>
-                        <h5>Vodotěsnost</h5>
-                        <p class="small">Před plaváním si nechte hodinky přetestovat.</p>
+                    <div class="card h-100 border-0 shadow-sm p-3">
+                        <div class="material-icon text-dark mx-auto mt-3">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Keramika</h5>
+                            <p class="card-text small">Prakticky nepoškrábatelná a barevně stálá. Je však křehká a při silném nárazu může prasknout.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="kontakt" class="bg-light">
+    <!-- NOVÁ SEKCE: SLOVNÍČEK -->
+    <section id="slovnicek" class="bg-white pt-5 pb-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-normal">Slovníček pojmů</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion shadow-sm" id="glossaryAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#term1">
+                                    <strong>Luneta (Bezel)</strong>
+                                </button>
+                            </h2>
+                            <div id="term1" class="accordion-collapse collapse show" data-bs-parent="#glossaryAccordion">
+                                <div class="accordion-body">
+                                    Kroužek kolem sklíčka hodinek. Může být pevný (estetický) nebo otočný (pro měření času u potápěčských hodinek).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#term2">
+                                    <strong>Korunka (Crown)</strong>
+                                </button>
+                            </h2>
+                            <div id="term2" class="accordion-collapse collapse" data-bs-parent="#glossaryAccordion">
+                                <div class="accordion-body">
+                                    Ovládací prvek na boku pouzdra (obvykle na pozici 3). Slouží k natahování strojku a nastavování času či data.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#term3">
+                                    <strong>Safírové sklíčko</strong>
+                                </button>
+                            </h2>
+                            <div id="term3" class="accordion-collapse collapse" data-bs-parent="#glossaryAccordion">
+                                <div class="accordion-body">
+                                    Nejtvrdší typ sklíčka používaný u kvalitních hodinek. Je extrémně odolné proti poškrábání (tvrdší je pouze diamant).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#term4">
+                                    <strong>Rezerva chodu</strong>
+                                </button>
+                            </h2>
+                            <div id="term4" class="accordion-collapse collapse" data-bs-parent="#glossaryAccordion">
+                                <div class="accordion-body">
+                                    Doba, po kterou mechanické hodinky poběží po plném natažení bez dalšího zásahu. Obvykle se pohybuje mezi 40 a 80 hodinami.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#term5">
+                                    <strong>Luminiscence (Lume)</strong>
+                                </button>
+                            </h2>
+                            <div id="term5" class="accordion-collapse collapse" data-bs-parent="#glossaryAccordion">
+                                <div class="accordion-body">
+                                    Látka nanesená na ručičky a indexy, která ve tmě svítí (např. Super-LumiNova). Umožňuje odečítat čas i v noci.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pec" class="bg-light pt-5 pb-5">
+        <div class="container">
+            <h2 class="text-center mb-5 display-4 fw-normal">Jak se o hodinky starat</h2>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="p-4 rounded shadow-sm h-100 bg-white">
+                        <i class="fa-solid fa-droplet fa-2x mb-3 text-primary"></i>
+                        <h5>Čištění</h5>
+                        <p class="small text-muted">Otírejte mikrovláknem. Kovové tahy lze mýt mýdlovou vodou a měkkým kartáčkem.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-4 rounded shadow-sm h-100 bg-white">
+                        <i class="fa-solid fa-tools fa-2x mb-3 text-primary"></i>
+                        <h5>Servis</h5>
+                        <p class="small text-muted">Mechanické hodinky potřebují kompletní servis (promazání) každých 5 až 7 let.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-4 rounded shadow-sm h-100 bg-white">
+                        <i class="fa-solid fa-magnet fa-2x mb-3 text-primary"></i>
+                        <h5>Magnetismus</h5>
+                        <p class="small text-muted">Pozor na silné magnety (reproduktory, iPad obaly), mohou zmagnetizovat strojek a zrychlit chod.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="p-4 rounded shadow-sm h-100 bg-white">
+                        <i class="fa-solid fa-water fa-2x mb-3 text-primary"></i>
+                        <h5>Vodotěsnost</h5>
+                        <p class="small text-muted">Těsnění stárne. Před plaváním si nechte hodinky každý rok přetestovat na tlak.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="bg-white pt-5 pb-5">
         <div class="container">
             <h2 class="text-center mb-5 display-4 fw-normal">Kontaktujte nás</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <form class="needs-validation shadow p-5 bg-white rounded" novalidate>
+                    <form class="needs-validation shadow p-5 bg-light rounded" novalidate>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label for="name" class="form-label">Jméno</label>
@@ -412,10 +564,12 @@
 
     <footer class="bg-dark text-white py-4 text-center">
         <div class="container">
-            <p class="mb-0">&copy; <?php echo date("Y"); ?> Chronos. Vytvořeno jako závěrečná práce.</p>
+            <p class="mb-0">&copy; 2026 <a href="https://github.com/0ndraM">Chronos</a> . Vytvořeno jako závěrečná práce.</p>
+            <small class="text-muted">Všechny obrázky jsou pouze ilustrativní.</small>
         </div>
     </footer>
 
+    <!-- Modals -->
     <div class="modal fade" id="gmtModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -424,7 +578,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    GMT ručka oběhne ciferník jednou za 24 hodin. Spolu s otočnou lunetou tak můžete sledovat až tři časová pásma.
+                    GMT ručka oběhne ciferník jednou za 24 hodin. Spolu s otočnou lunetou tak můžete sledovat až tři časová pásma. Původně vyvinuto pro piloty Pan Am v 50. letech.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
@@ -441,7 +595,9 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    Nejsložitější je tzv. Věčný kalendář (Perpetual Calendar), který je mechanicky naprogramován tak, že ví, kdy je únor a kdy je přestupný rok, až do roku 2100.
+                    <p><strong>Datum (Date):</strong> Zobrazuje den v měsíci.</p>
+                    <p><strong>Day-Date:</strong> Zobrazuje den v týdnu i datum.</p>
+                    <p><strong>Věčný kalendář (Perpetual Calendar):</strong> Mechanický zázrak, který ví, kolik dní má který měsíc, a počítá i s přestupnými roky až do roku 2100.</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
@@ -458,7 +614,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    Pozor, nepleťte si pojmy "Chronograf" (stopky) a "Chronometr" (certifikát vysoké přesnosti strojku).
+                    <p>Chronograf slouží k měření krátkých časových úseků. Obvykle má dvě tlačítka:</p>
+                    <ul>
+                        <li><strong>Start/Stop:</strong> Spouští a zastavuje měření (horní tlačítko).</li>
+                        <li><strong>Reset:</strong> Vrací ručičky na nulu (spodní tlačítko).</li>
+                    </ul>
+                    <p><em>Pozor: Nepleťte si pojmy "Chronograf" (funkce stopek) a "Chronometr" (certifikát přesnosti).</em></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
@@ -467,6 +628,6 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
